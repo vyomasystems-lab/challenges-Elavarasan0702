@@ -23,4 +23,4 @@ async def adder_randomised_test(dut):
         dut.b.value=B
         await Timer(2,units="ns")
         dut.log.info(f'A={A:05} B={B:05} model={A+B:05} OUT={int(dut.sum.value):05}')
-        assert dut.sum.value==A+B,"Randomised test fail with:{A}+{B}={SUM}",format(A=dut.a.value,B=dut.b.value,SUM=dut.sum.value)
+        assert dut.sum.value==A+B,"Randomised test fail with:{A}+{B}={SUM}".format(A=dut.a.value,B=dut.b.value,SUM=dut.sum.value)

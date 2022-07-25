@@ -7,8 +7,7 @@ import random
 @cocotb.test()
 async def test_mux(dut):
     """Test for mux2"""
-    for i in range(5):
-        SEL=random.randint(0,31)
+        
         INP=[random.randint(0,3) for i in range(31)]
 
         #driving inputs
@@ -46,12 +45,13 @@ async def test_mux(dut):
         dut.inp30.value=INP[30]
         #dut.inp31.value=INP[31]
 
-        for i in range(31):
-            if SEL==i:
-                OUT=INP[i]
+        for SEL in range(31):
+            
 
 
-        await Timer(2,units="ns")
-        dut.log.info(f'SEL={SEL:05} INPUT={INP[SEL]:05} model={OUT:05} OUT={int(dut.out.value):05}')
-        assert dut.out.value==OUT,"Randomised test fail with:{SEL}+{B}={OUT}".format(A=dut.sel.value,B=INP[int(dut.sel.value)],OUT=dut.out.value)
+            await Timer(2,units="ns")
+            dut._log.info(f'SEL={SEL:05} MODEL={INP[SEL]:05} OUT={int(dut.out.value):05}')
+            if dut.out.value!=INP[SEL]:
+                print("SELECT:",SEL,"has the bug")
+            #assert dut.out.value==OUT,"Randomised test fail with:{SEL}+{B}={OUT}".format(A=dut.sel.value,B=INP[int(dut.sel.value)],OUT=dut.out.value)
         #cocotb.log.info('##### CTB: Develop your test here ########')

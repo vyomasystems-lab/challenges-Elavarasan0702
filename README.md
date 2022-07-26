@@ -126,7 +126,7 @@ The Multiplexer and Sequence detector designed and verified using cocotb library
 
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/vyomasystems-lab/challenges-Elavarasan0702/blob/master/mux_fail.JPG" >
   </a>
 
   <h3 align="center">Best-README-Template</h3>
@@ -145,11 +145,13 @@ The Multiplexer and Sequence detector designed and verified using cocotb library
   </p>
 </div>
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+The line given below are the errored one which was found out using verification process
+* Design Bug 
   ```sh
-  npm install npm@latest -g
+        5'b01101: out = inp12; 
+        5'b01101: out = inp13;-g
   ```
+5'b01100 select line only direct the inp12 to out.But bugged code direct the inp12 line to output for the 5'b01101 select line
 
 ### Sequence Detector
 

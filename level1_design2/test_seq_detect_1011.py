@@ -50,4 +50,4 @@ async def test_seq_bug1(dut):
     
 
 
-    cocotb.log.info('#### CTB: Develop your test here! ######')
+   

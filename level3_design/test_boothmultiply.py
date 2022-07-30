@@ -8,4 +8,6 @@ async def multiply_test(dut):
   dut.a.value=A
   dut.b.value=B
   await Timer(2,units="ns")
-  assert dut.c.value==A*B,"MODEL:{}  OUT:{}".format(A*B,dut.c.value)
+  out=dut.c.value
+  print(type(out))
+  #assert int(str(dut.c.value),2)==A*B,"MODEL:{}  OUT:{}".format(A*B,int(str(dut.c.value),2))

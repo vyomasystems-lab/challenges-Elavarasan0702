@@ -1,6 +1,13 @@
 // See LICENSE.vyoma for more details
 // Verilog module for Sequence detection: 1011
+module invert(input a,output b);
+	assign b=~a;
+endmodule
 
+module fa(input a,b,cin,output sum,q);
+	assign sum=a^b^cin;
+	assign q=(a*b)|(b*cin)|(cin*a);
+endmodule
 module Adder(a,b,sum);
 	input [7:0] a,b;
 	output [7:0]sum;
@@ -90,7 +97,7 @@ endmodule
 
 
  
-module boothmul(input signed[7:0]a,b,output signed [15:0] c);
+module boothmultiply(input signed[7:0]a,b,output signed [15:0] c);
 	wire signed [7:0]Q0,Q1,Q2,Q3,Q4,Q5,Q6,Q7;
 	wire signed [7:0] m;
 	wire signed [7:0] A1,A0,A3,A2;

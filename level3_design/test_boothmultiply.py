@@ -10,4 +10,4 @@ async def multiply_test(dut):
   await Timer(2,units="ns")
   out=dut.c.value
   print(type(out))
-  #assert int(str(dut.c.value),2)==A*B,"MODEL:{}  OUT:{}".format(A*B,int(str(dut.c.value),2))
+  assert int(str(dut.c.value),2)==A*B,"MODEL:{}  OUT:{}".format(A*B,int(str(dut.c.value),2))

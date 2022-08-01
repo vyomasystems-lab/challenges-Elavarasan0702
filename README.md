@@ -27,7 +27,7 @@ challenges-Elavarasan0702 created by GitHub Classroom
 <br />
 <div align="center">
   <a>
-    <img href=https://github.com/vyomasystems-lab/challenges-Elavarasan0702/blob/master/images/boothmultiplier.JPG>
+    <img src=https://github.com/vyomasystems-lab/challenges-Elavarasan0702/blob/master/images/boothmultiplier.JPG>
   </a>
   
 </div>
@@ -134,14 +134,37 @@ In our example the sequence detector is designed to find 1011 sequence
   </a>
 </div>
    ```sh
-   49.next_state = SEQ_10;
+          49.next_state = SEQ_10;
+          65.next_state = SEQ_10;
    ```
+   
+<!-- Level2-Design-->
+## Level2-Design
 
-   ```sh
-   65.next_state = SEQ_10;
-   ```
+The Level2 design is Bit manipulation multiplier
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="https://github.com/vyomasystems-lab/challenges-Elavarasan0702/blob/master/images/bit_manipulate_bug1.JPG">
+  </a>
+</div>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+ The AND function has the bug which has the opcode 0x40007033
+ 
+ <!-- Level3-Design-->
+## Level3-Design
+
+ Booth's algorithm is a multiplication algorithm that multiplies two signed binary numbers in 2's complement notation. Booth used desk calculators that were faster at shifting than adding and created the algorithm to increase their speed. Booth's algorithm is of interest in the study of computer architecture
+ 
+ ## Acknowlegdements
+- FOSSEE, IIT Bombay
+- Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalpghosh@gmail.com
+
+
+
+## Reference
+https://github.com/anand873/DigitalVLSI/tree/master/Assignment%202
+
+https://www.google.com/search?q=booth+multiplier+circui 
 
 
 

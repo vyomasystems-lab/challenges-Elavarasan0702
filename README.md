@@ -154,6 +154,7 @@ The Level2 design is Bit manipulation multiplier
  ## Acknowlegdements
 - FOSSEE, IIT Bombay
 - Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalpghosh@gmail.com
+- Vyoma Systems
 
 
 

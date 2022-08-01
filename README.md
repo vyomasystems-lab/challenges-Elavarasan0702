@@ -40,14 +40,9 @@ challenges-Elavarasan0702 created by GitHub Classroom
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-
     </li>
     <li>
       <a href="#Level1-Design1">Level1-Design</a>
-      <ul>
-        <li><a href="#Multiplexer">Multiplexer</a></li>
-        <li><a href="#Sequence Detector">Sequence Detector</a></li>
-      </ul>
     </li>
     <li><a href="#Level2-Design">Level2-Design</a></li>
     <li><a href="#Level3-Design">Level3-design</a></li>
@@ -64,7 +59,7 @@ In this project, design verification of RTL is done using cocotb library in pyth
 
 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 
 
@@ -104,7 +99,7 @@ The line given below are the errored one which was found out using verification 
 * Design Bug 
   ```sh
         5'b01101: out = inp12; 
-        5'b01101: out = inp13;-g
+        5'b01101: out = inp13;
   ```
 5'b01100 select line only direct the inp12 to out.But bugged code direct the inp12 line to output for the 5'b01101 select line
 
@@ -133,10 +128,11 @@ In our example the sequence detector is designed to find 1011 sequence
     <img src="https://github.com/vyomasystems-lab/challenges-Elavarasan0702/blob/master/demo/seq_det_nonbug.JPG" >
   </a>
 </div>
-   ```sh
-          49.next_state = SEQ_10;
-          65.next_state = SEQ_10;
-   ```
+
+ ```sh
+      49.next_state = SEQ_10;
+      65.next_state = SEQ_10;
+ ```
    
 <!-- Level2-Design-->
 ## Level2-Design

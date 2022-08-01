@@ -129,10 +129,10 @@ In our example the sequence detector is designed to find 1011 sequence
   </a>
 </div>
 
- ```sh
-      49.next_state = SEQ_10;
-      65.next_state = SEQ_10;
- ```
+  ```sh
+        49.next_state = SEQ_10;
+        65.next_state = SEQ_10;
+   ```
    
 <!-- Level2-Design-->
 ## Level2-Design
